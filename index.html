@@ -8,9 +8,64 @@
     <link rel="stylesheet" href="plugins\bootstrap-3.3.7-dist\css\bootstrap.min.css">
 </head>
 <body>
-    <div id="miTemplate"></div>
-    <script src="plugins\jquery\jquery-3.3.1.js"></script>
-    <script src="plugins\bootstrap-3.3.7-dist\js\bootstrap.min.js"></script>
-    <script src="scripts\miScript.js"></script>
+    <nav class="navbar navbar-default">
+        <nav class="navbar-header navbar-brand">Práctica #6</nav>
+    </nav>
+    <div class="container">
+        <!-- Fila para el formulario de captura de nueva tarea -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="txtNuevaTarea" class="control-label">Nueva tarea:</label>
+                    <input id="txtNuevaTarea" type="text" class="form-control">
+                </div>
+                <buttton class="btn btn-primary pull-right">
+                    Agregar
+                    <span class="glyphicon glyphicon-inbox"></span>
+                </buttton>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="pull-right">Lista de Tareas</h1>
+            </div>
+        </div>
+        <!-- Fin del formulario de captura de la nueva tarea -->
+        <!-- Fila para mostrar tareas nuevas -->
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-hover table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Tareas</th>
+                            <th>Estado</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Terminar práctica 6 de desarrollo web</td>
+                            <td>Pendiente</td>
+                            <td>
+                                <button class="btn btn-primary">
+                                    Finalizar <span class="glyphicon glyphicon-ok"></span>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Terminar práctica 5 de desarrollo web</td>
+                            <td>Finalizado</td>
+                            <td>
+                                <button class="btn btn-success disabled">
+                                        Finalizado <span class="glyphicon glyphicon-ok-circle"></span>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- Fin del  -->
+    </div>
 </body>
 </html>
